@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Rian Top Up</title>
+
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #0f172a;
+        color: white;
+    }
+
+    header {
+        background-color: #1e293b;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 15px;
+        color: #38bdf8;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .game-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background-color: #1e293b;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .card button {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #22c55e;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .card button:hover {
+        background-color: #16a34a;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #1e293b;
+        margin-top: 20px;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+    <h1>Rian Top Up Game</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="game.html">Game</a>
+        <a href="#">Kontak</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Daftar Game</h2>
+
+```
+<div class="game-list">
+
+    <div class="card">
+        <h3>Mobile Legends</h3>
+        <p>Top Up Diamond ML</p>
+        <button onclick="beliGame('Mobile Legends')">Beli</button>
+    </div>
+
+    <div class="card">
+        <h3>Free Fire</h3>
+        <p>Top Up Diamond FF</p>
+        <button onclick="beliGame('Free Fire')">Beli</button>
+    </div>
+
+    <div class="card">
+        <h3>Genshin Impact</h3>
+        <p>Top Up Genesis Crystal</p>
+        <button onclick="beliGame('Genshin Impact')">Beli</button>
+    </div>
+
+    <div class="card">
+        <h3>PUBG Mobile</h3>
+        <p>Top Up UC PUBG</p>
+        <button onclick="beliGame('PUBG Mobile')">Beli</button>
+    </div>
+
+</div>
+```
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Rian Top Up Game</p>
+</footer>
+
+<script>
+    function beliGame(namaGame) {
+        let userId = prompt("Masukkan ID game untuk " + namaGame + ":");
+
+        if (userId) {
+            alert("Top up " + namaGame + " berhasil!\nID: " + userId);
+        } else {
+            alert("Transaksi dibatalkan");
+        }
+    }
+</script>
+
+</body>
+</html>
